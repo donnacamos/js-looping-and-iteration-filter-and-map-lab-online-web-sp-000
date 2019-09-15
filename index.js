@@ -17,3 +17,7 @@ function exactMatch(drivers, requirements){
     return true;
   })
 }
+
+function exactMatchToList(drivers, requirements){
+  return exactMatch(drivers, requirements).map(d => d.name); 
+}
